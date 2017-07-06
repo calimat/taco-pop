@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		F6DAD9AF1F0DD33F000BFC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9AE1F0DD33F000BFC51 /* AppDelegate.swift */; };
-		F6DAD9B11F0DD33F000BFC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9B01F0DD33F000BFC51 /* ViewController.swift */; };
 		F6DAD9B41F0DD33F000BFC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DAD9B21F0DD33F000BFC51 /* Main.storyboard */; };
 		F6DAD9B61F0DD33F000BFC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DAD9B51F0DD33F000BFC51 /* Assets.xcassets */; };
 		F6DAD9B91F0DD33F000BFC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DAD9B71F0DD33F000BFC51 /* LaunchScreen.storyboard */; };
 		F6DAD9C41F0DD33F000BFC51 /* TacoPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9C31F0DD33F000BFC51 /* TacoPOPTests.swift */; };
+		F6DAD9D51F0DD448000BFC51 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9D41F0DD448000BFC51 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		F6DAD9AB1F0DD33F000BFC51 /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DAD9AE1F0DD33F000BFC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6DAD9B01F0DD33F000BFC51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6DAD9B31F0DD33F000BFC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6DAD9B51F0DD33F000BFC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6DAD9B81F0DD33F000BFC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		F6DAD9BF1F0DD33F000BFC51 /* TacoPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DAD9C31F0DD33F000BFC51 /* TacoPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPOPTests.swift; sourceTree = "<group>"; };
 		F6DAD9C51F0DD33F000BFC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DAD9D41F0DD448000BFC51 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,12 @@
 		F6DAD9AD1F0DD33F000BFC51 /* TacoPOP */ = {
 			isa = PBXGroup;
 			children = (
-				F6DAD9AE1F0DD33F000BFC51 /* AppDelegate.swift */,
-				F6DAD9B01F0DD33F000BFC51 /* ViewController.swift */,
-				F6DAD9B21F0DD33F000BFC51 /* Main.storyboard */,
-				F6DAD9B51F0DD33F000BFC51 /* Assets.xcassets */,
-				F6DAD9B71F0DD33F000BFC51 /* LaunchScreen.storyboard */,
-				F6DAD9BA1F0DD33F000BFC51 /* Info.plist */,
+				F6DAD9D31F0DD3F3000BFC51 /* Extensions */,
+				F6DAD9D21F0DD3EA000BFC51 /* Protocols */,
+				F6DAD9D01F0DD3C4000BFC51 /* Model */,
+				F6DAD9CF1F0DD3BD000BFC51 /* View */,
+				F6DAD9CE1F0DD3B6000BFC51 /* Controller */,
+				F6DAD9D11F0DD3DA000BFC51 /* Resources */,
 			);
 			path = TacoPOP;
 			sourceTree = "<group>";
@@ -94,6 +94,54 @@
 				F6DAD9C51F0DD33F000BFC51 /* Info.plist */,
 			);
 			path = TacoPOPTests;
+			sourceTree = "<group>";
+		};
+		F6DAD9CE1F0DD3B6000BFC51 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6DAD9AE1F0DD33F000BFC51 /* AppDelegate.swift */,
+				F6DAD9D41F0DD448000BFC51 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F6DAD9CF1F0DD3BD000BFC51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6DAD9B21F0DD33F000BFC51 /* Main.storyboard */,
+				F6DAD9B71F0DD33F000BFC51 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F6DAD9D01F0DD3C4000BFC51 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F6DAD9D11F0DD3DA000BFC51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6DAD9B51F0DD33F000BFC51 /* Assets.xcassets */,
+				F6DAD9BA1F0DD33F000BFC51 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F6DAD9D21F0DD3EA000BFC51 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		F6DAD9D31F0DD3F3000BFC51 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6DAD9B11F0DD33F000BFC51 /* ViewController.swift in Sources */,
 				F6DAD9AF1F0DD33F000BFC51 /* AppDelegate.swift in Sources */,
+				F6DAD9D51F0DD448000BFC51 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
