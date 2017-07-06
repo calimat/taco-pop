@@ -13,6 +13,8 @@
 		F6DAD9B91F0DD33F000BFC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DAD9B71F0DD33F000BFC51 /* LaunchScreen.storyboard */; };
 		F6DAD9C41F0DD33F000BFC51 /* TacoPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9C31F0DD33F000BFC51 /* TacoPOPTests.swift */; };
 		F6DAD9D51F0DD448000BFC51 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9D41F0DD448000BFC51 /* MainVC.swift */; };
+		F6DAD9D71F0DD674000BFC51 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9D61F0DD674000BFC51 /* DropShadow.swift */; };
+		F6DAD9D91F0DD743000BFC51 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DAD9D81F0DD743000BFC51 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F6DAD9C31F0DD33F000BFC51 /* TacoPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPOPTests.swift; sourceTree = "<group>"; };
 		F6DAD9C51F0DD33F000BFC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DAD9D41F0DD448000BFC51 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F6DAD9D61F0DD674000BFC51 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		F6DAD9D81F0DD743000BFC51 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			children = (
 				F6DAD9B21F0DD33F000BFC51 /* Main.storyboard */,
 				F6DAD9B71F0DD33F000BFC51 /* LaunchScreen.storyboard */,
+				F6DAD9D81F0DD743000BFC51 /* HeaderView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		F6DAD9D21F0DD3EA000BFC51 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F6DAD9D61F0DD674000BFC51 /* DropShadow.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -250,7 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6DAD9AF1F0DD33F000BFC51 /* AppDelegate.swift in Sources */,
+				F6DAD9D71F0DD674000BFC51 /* DropShadow.swift in Sources */,
 				F6DAD9D51F0DD448000BFC51 /* MainVC.swift in Sources */,
+				F6DAD9D91F0DD743000BFC51 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
