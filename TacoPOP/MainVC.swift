@@ -55,12 +55,19 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource , UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        /*
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
             cell.configureCell(taco: ds.tacoArray[indexPath.row])
             return cell
         }
         
         return UICollectionViewCell()
+       */
+        
+        let cell = collectionView.dequeReusableCell(forIndexPath: indexPath as NSIndexPath) as TacoCell
+        cell.configureCell(taco: ds.tacoArray[indexPath.row])
+        return cell 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
