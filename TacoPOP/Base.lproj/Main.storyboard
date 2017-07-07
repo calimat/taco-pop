@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,15 +40,31 @@
                                     <constraint firstItem="Mc2-Ai-Yk1" firstAttribute="centerY" secondItem="PgS-PE-Y3A" secondAttribute="centerY" id="a1g-OJ-yDP"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="j5h-lA-e97">
+                                <rect key="frame" x="16" y="100" width="343" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hoR-1j-G5U">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PgS-PE-Y3A" secondAttribute="trailing" id="2Ad-aK-Brq"/>
+                            <constraint firstItem="j5h-lA-e97" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="O4l-du-sdu"/>
+                            <constraint firstItem="j5h-lA-e97" firstAttribute="top" secondItem="PgS-PE-Y3A" secondAttribute="bottom" constant="20" id="VlC-yQ-aaZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j5h-lA-e97" secondAttribute="bottom" constant="20" id="YzV-wu-vsG"/>
                             <constraint firstItem="PgS-PE-Y3A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hkt-4F-7Qd"/>
                             <constraint firstItem="PgS-PE-Y3A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mUi-63-xjr"/>
+                            <constraint firstItem="j5h-lA-e97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uTF-xX-UoK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="j5h-lA-e97" id="5qg-28-8aM"/>
                         <outlet property="headerView" destination="PgS-PE-Y3A" id="wfg-BA-bXc"/>
                     </connections>
                 </viewController>
